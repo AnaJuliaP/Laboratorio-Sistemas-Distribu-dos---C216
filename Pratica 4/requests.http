@@ -1,0 +1,56 @@
+### 1. Rota raiz
+GET http://localhost:8001/
+
+### 2. Cadastrar GES 1
+POST http://localhost:8001/api/v1/alunos/
+Content-Type: application/json
+
+{"nome": "Ana Julia", "email": "ana@ges.edu", "curso": "GES"}
+
+### 3. Cadastrar GES 2
+POST http://localhost:8001/api/v1/alunos/
+Content-Type: application/json
+
+{"nome": "Bruno Lima", "email": "bruno@ges.edu", "curso": "GES"}
+
+### 4. Cadastrar GES 3
+POST http://localhost:8001/api/v1/alunos/
+Content-Type: application/json
+
+{"nome": "Carla Mendes", "email": "carla@ges.edu", "curso": "GES"}
+
+### 5. Cadastrar GEC 1
+POST http://localhost:8001/api/v1/alunos/
+Content-Type: application/json
+
+{"nome": "Daniel Costa", "email": "daniel@gec.edu", "curso": "GEC"}
+
+### 6. Cadastrar GEC 2
+POST http://localhost:8001/api/v1/alunos/
+Content-Type: application/json
+
+{"nome": "Eduarda Faria", "email": "eduarda@gec.edu", "curso": "GEC"}
+
+### 7. Cadastrar GEC 3
+POST http://localhost:8001/api/v1/alunos/
+Content-Type: application/json
+
+{"nome": "Felipe Torres", "email": "felipe@gec.edu", "curso": "GEC"}
+
+### 8. Listar todos
+GET http://localhost:8001/api/v1/alunos/
+
+### 9. Buscar por ID
+GET http://localhost:8001/api/v1/alunos/GES1
+
+### 10. Atualizar aluno
+PATCH http://localhost:8001/api/v1/alunos/GES1
+Content-Type: application/json
+
+{"nome": "Ana Julia Atualizada", "email": "ananova@ges.edu"}
+
+### 11. Deletar aluno
+DELETE http://localhost:8001/api/v1/alunos/GEC3
+
+### 12. Resetar lista
+DELETE http://localhost:8001/api/v1/alunos/
